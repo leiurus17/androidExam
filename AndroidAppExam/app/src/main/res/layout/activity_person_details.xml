@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSmokeWhite">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/colorSmokeWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorGray">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/user_picture"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/ic_user_profile" />
+                <TextView
+                    android:id="@+id/person_fullname_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="MMMMMMMMMMMMMMM"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorSmokeWhite"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="25dp"
+                        android:orientation="horizontal"
+                        android:background="@color/colorWhite">
+
+                        <ImageView
+                            android:id="@+id/user_bday"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            app:srcCompat="@drawable/ic_bday" />
+
+                        <LinearLayout
+                            android:layout_width="195dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/person_bday_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Birthday : December 99, 9999"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:id="@+id/person_age_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Age:99"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="0.3dp"
+                        android:layout_marginLeft="75dp"
+                        app:srcCompat="@drawable/img_linebreak" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="@color/colorWhite">
+
+                        <ImageView
+                            android:id="@+id/user_email"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            app:srcCompat="@drawable/ic_email" />
+
+                        <LinearLayout
+                            android:layout_width="195dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/person_email_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="jfkdjld@gmail.com"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:id="@+id/email_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Email"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorBlack" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="0.3dp"
+                        android:layout_marginLeft="75dp"
+                        app:srcCompat="@drawable/img_linebreak" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="@color/colorWhite">
+
+                        <ImageView
+                            android:id="@+id/user_mobile"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            app:srcCompat="@drawable/ic_mobile" />
+
+                        <LinearLayout
+                            android:layout_width="195dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/person_mobile_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="09999999999"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:id="@+id/mobile_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Mobile"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorBlack" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="0.3dp"
+                        android:layout_marginLeft="75dp"
+                        app:srcCompat="@drawable/img_linebreak" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="@color/colorWhite">
+
+                        <ImageView
+                            android:id="@+id/user_address"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            app:srcCompat="@drawable/ic_address" />
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/person_address_text"
+                                android:layout_width="300dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="03308 WWWWWWWWWWWWWWWWW"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:id="@+id/address_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Address"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorBlack" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="0.3dp"
+                        android:layout_marginLeft="75dp"
+                        app:srcCompat="@drawable/img_linebreak" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:background="@color/colorWhite">
+
+                        <ImageView
+                            android:id="@+id/user_contact"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="5dp"
+                            app:srcCompat="@drawable/ic_contact" />
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/person_contact_text"
+                                android:layout_width="300dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="kdsjfklfjklfjl"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                            <TextView
+                                android:id="@+id/person_contact_num_text"
+                                android:layout_width="200dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Mobile: 000000"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

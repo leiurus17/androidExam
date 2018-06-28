@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versions.compileSdk
+    defaultConfig {
+        applicationId "com.upraxis.exam"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode versions.versionCode
+        versionName versions.name
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // Make generated apks contain version name and code.
+        archivesBaseName = "app-${versions.name}-${versions.code}"
+    }
+    buildTypes {
+        debug {
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+//                    'proguard-rules.pro'
+
+            buildConfigField "int", "DATABASE_VERSION", versions.database
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "int", "DATABASE_VERSION", versions.database
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    androidTestImplementation libraries.dagger
+    androidTestImplementation libraries.supportAnnotation
+    androidTestImplementation libraries.supportAppCompat
+    androidTestImplementation libraries.supportDesign
+    androidTestImplementation libraries.supportRecyclerView
+
+    androidTestImplementation testLibraries.assertJ
+//    androidTestImplementation testLibraries.dataFactory
+//    androidTestImplementation testLibraries.espressoCore
+//    androidTestImplementation testLibraries.espressoIntents
+//    androidTestImplementation testLibraries.espressoContrib
+
+    testImplementation testLibraries.junit
+
+    implementation libraries.support
+    implementation libraries.supportAppCompat
+    implementation libraries.supportMediaCompat
+    implementation libraries.supportAnnotation
+
+    implementation libraries.supportConstraint
+    implementation libraries.supportDesign
+    implementation libraries.supportRecyclerView
+
+    implementation libraries.cardview
+
+
+    implementation libraries.lifecycleCommons
+    implementation libraries.lifecycleExtensions
+
+
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    annotationProcessor libraries.daggerCompiler
+    annotationProcessor libraries.daggerProcessor
+    annotationProcessor libraries.roomProcessor
+    annotationProcessor libraries.butterKnifeCompiler
+
+    implementation libraries.daggerAndroid
+    implementation libraries.daggerAndroidSupport
+    implementation libraries.dagger
+
+    implementation libraries.butterKnife
+
+    implementation libraries.mosbyMvp
+
+
+
+    implementation libraries.gson
+    implementation libraries.okHttpLogging
+    implementation libraries.retrofit
+    implementation libraries.retrofitGsonConverter
+    implementation libraries.retrofitRxJavaAdapter
+    implementation libraries.room
+    implementation libraries.roomRxJava2
+    implementation libraries.rxAndroid
+    implementation libraries.rxFingerprint
+    // Rxjava
+    implementation libraries.rxjava
+
+}
+
+
+apply plugin: 'com.google.gms.google-services'

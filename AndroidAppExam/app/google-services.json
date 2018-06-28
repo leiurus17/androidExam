@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "385231643096",
+    "firebase_url": "https://upraxisexam.firebaseio.com",
+    "project_id": "upraxisexam",
+    "storage_bucket": "upraxisexam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385231643096:android:cb77d07554b931eb",
+        "android_client_info": {
+          "package_name": "com.upraxis.exam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385231643096-0i51ha1c4h92fv05irp32hcnmi9ouboo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upraxis.exam",
+            "certificate_hash": "83e0bc6d61300780f20c180eb4100ebbf6198fb9"
+          }
+        },
+        {
+          "client_id": "385231643096-7kvivsa8ie403prc79aqcibgfpsv5eb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkdrxaZpxRFuhG026e0B3WQLi_UyKuFw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385231643096-7kvivsa8ie403prc79aqcibgfpsv5eb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

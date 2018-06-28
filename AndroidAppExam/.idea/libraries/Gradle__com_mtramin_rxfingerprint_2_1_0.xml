@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mtramin:rxfingerprint-2.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxfingerprint-2.1.0.aar/bad4eb694c951c4436a027f8e06c8b3a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxfingerprint-2.1.0.aar/bad4eb694c951c4436a027f8e06c8b3a/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mtramin/rxfingerprint/2.1.0/b1e4aefd85dd813d524d1d9286464598959dd050/rxfingerprint-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
