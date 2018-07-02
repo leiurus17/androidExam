@@ -47,10 +47,10 @@ dependencies {
     androidTestImplementation libraries.supportRecyclerView
 
     androidTestImplementation testLibraries.assertJ
-//    androidTestImplementation testLibraries.dataFactory
-//    androidTestImplementation testLibraries.espressoCore
-//    androidTestImplementation testLibraries.espressoIntents
-//    androidTestImplementation testLibraries.espressoContrib
+    androidTestImplementation testLibraries.dataFactory
+    androidTestImplementation testLibraries.espressoCore
+    androidTestImplementation testLibraries.espressoIntents
+    androidTestImplementation testLibraries.espressoContrib
 
     testImplementation testLibraries.junit
 

@@ -37,7 +37,7 @@ ext.versions = [
         lifecycleExtensions                 : '1.1.1',
 
         // Test libraries
-        assetJ                              : '2.5.0',
+        assertJ                             : '2.5.0',
         junit                               : '4.12',
         dataFactory                         : '0.8',
         espresso                            : '3.0.2',
@@ -97,10 +97,11 @@ ext.libraries = [
 ext.testLibraries = [
 
         androidArchitectureCore     : "android.arch.core:core-testing:$versions.room",
-        assetJ                      : "org.assertj:assertj-core:$versions.assertJ",
+        assertJ                     : "org.assertj:assertj-core:$versions.assertJ",
+        dataFactory                 : "org.fluttercode.datafactory:datafactory:$versions.dataFactory",
         espressoCore                : "com.android.support.test.espresso:espresso-core:$versions.espresso",
-        espressoIntents             : "com.android.support.test.espresso-intent:$versions.espresso",
-        espressoContrib             : "com.adnroid.support.test.espresso-contrib:$versions.espresso",
+        espressoIntents             : "com.android.support.test.espresso:espresso-intents:$versions.espresso",
+        espressoContrib             : "com.android.support.test.espresso:espresso-contrib:$versions.espresso",
         junit                       : "junit:junit:$versions.junit",
         mockito                     : "org.mockito:mockito-core:$versions.mockito",
         mockWebServer               : "com.squareup.okhttp3:mockwebserver:$versions.mockWebServer",
